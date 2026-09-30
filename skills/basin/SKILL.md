@@ -9,7 +9,7 @@ Basin ingests and transforms events, manages Apache Iceberg tables in R2, and qu
 
 ## Rebrand
 
-Cloudflare Data Platform is now **Basin**. Cloudflare Pipelines, R2 Data Catalog, and R2 SQL are now **Basin Pipelines**, **Basin Catalog**, and **Basin SQL**. Existing resources and configurations continue to work; legacy API identifiers and metrics names may still use the old terms. Use the Basin names and documentation URLs in new guidance. The migration is documented in [cloudflare-docs PR #33850](https://github.com/cloudflare/cloudflare-docs/pull/33850).
+Cloudflare Data Platform is now **Basin**. Cloudflare Pipelines, R2 Data Catalog, and R2 SQL are now **Basin Pipelines**, **Basin Catalog**, and **Basin SQL**. Existing resources and configurations continue to work. The prior Wrangler command families also continue to work: `wrangler pipelines`, `wrangler r2 bucket catalog`, and `wrangler r2 sql`. Use the new Basin commands and documentation URLs in new guidance. Legacy API identifiers and metrics names may still use the old terms; check the current docs for deprecation details. The migration is documented in [cloudflare-docs PR #33850](https://github.com/cloudflare/cloudflare-docs/pull/33850).
 
 ## Choose the workflow
 
