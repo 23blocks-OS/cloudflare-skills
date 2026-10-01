@@ -54,9 +54,10 @@ Find the row closest to the user's task. Products can appear in multiple rows, a
 | Distribute configuration or other key-value data | KV | Read-heavy key-value access fits the workload's consistency requirements | [KV](references/kv/README.md) |
 | Store uploads, downloads, or large objects | R2 | Store files by object key; pair with D1 when searchable metadata needs SQL | [R2](references/r2/README.md) |
 | Store versioned file trees, agent checkpoints, or repositories | Artifacts | Files need versioning and Git-compatible access; currently closed beta, so confirm access before implementation | [Artifacts](references/artifacts/README.md) |
-| Ingest event streams into a data lake | Pipelines | Transform and deliver streaming records into R2 | [Pipelines](references/pipelines/README.md) |
-| Manage Iceberg tables in R2 | R2 Data Catalog | Organize tables for a data lake and compatible query engines | [R2 Data Catalog](references/r2-data-catalog/README.md) |
-| Query a data lake with SQL | R2 SQL | Analyze data in R2 Data Catalog rather than transactional application records | [R2 SQL](references/r2-sql/README.md) |
+| Ingest event streams into R2 | Basin Pipelines | Transform and deliver streaming records into R2 | `basin` skill; [Basin Pipelines](https://developers.cloudflare.com/basin-pipelines/) |
+| Manage Iceberg tables in R2 | Basin Catalog | Organize tables for analytics and compatible query engines | `basin` skill; [Basin Catalog](https://developers.cloudflare.com/basin-catalog/) |
+| Query Iceberg tables with SQL | Basin SQL | Analyze tables in Basin Catalog | `basin` skill; [Basin SQL](https://developers.cloudflare.com/basin-sql/) |
+| Keep a durable event log with independent readers | K2 Streams | Produce records from Workers or HTTP, then consume with subscriptions | `k2` skill; [K2 docs](https://developers.cloudflare.com/k2/) |
 | Cache application responses | Workers Cache | Default for application caching; check the patterns and limitations before choosing alternatives | [Workers Cache](https://developers.cloudflare.com/workers/cache/); see caching guidance below |
 | Accelerate an existing website and control cached content | Cache/CDN | Configure caching for a proxied origin using Cache Rules, expiration settings, and purging | [Cache/CDN docs](https://developers.cloudflare.com/cache/) |
 | Keep origin content in a persistent cache | Cache Reserve | Reduce origin fetches with persistent CDN cache storage | [Cache Reserve](references/cache-reserve/README.md) |
